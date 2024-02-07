@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-mori="morteza"
+
 import re
 import subprocess
 from subprocess import PIPE, Popen
@@ -12,7 +12,7 @@ def ping(a):
     x=re.search("time=(?P<time>[0-9]{1,5})" , str(out))
 
     arr.append(x.groupdict()['time'])
-    mori=33
+
     
 
     if len(arr) > 10:
